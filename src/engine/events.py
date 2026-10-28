@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum, auto
 
+
 class EventType(Enum):
     MARKET = auto()
     SIGNAL = auto()

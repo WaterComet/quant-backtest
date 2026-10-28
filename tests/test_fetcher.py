@@ -6,7 +6,7 @@ from data.fetcher import BinanceDataFetcher
 
 
 @pytest.mark.asyncio
-async def test_fetcher_handles_429_rate_limit():
+async def test_fetcher_handles_429_rate_limit() -> None:
     """Ensures the fetcher backs off and retries when hitting a 429 status."""
     fetcher = BinanceDataFetcher(max_retries=3, base_delay=0.01) # Fast delay for testing
     
